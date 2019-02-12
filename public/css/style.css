@@ -1,0 +1,564 @@
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-slab/roboto-slab-v6-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+       url('../fonts/roboto-slab/roboto-slab-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-slab/roboto-slab-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-slab/roboto-slab-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-slab/roboto-slab-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-slab/roboto-slab-v6-latin-regular.svg#RobotoSlab') format('svg'); /* Legacy iOS */
+}
+/* roboto-slab-700 - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-slab/roboto-slab-v6-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'),
+       url('../fonts/roboto-slab/roboto-slab-v6-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-slab/roboto-slab-v6-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-slab/roboto-slab-v6-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-slab/roboto-slab-v6-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-slab/roboto-slab-v6-latin-700.svg#RobotoSlab') format('svg'); /* Legacy iOS */
+}
+
+/* riceglue */
+@font-face {
+    font-family: 'riceglue';
+    src: url('../fonts/riceglue/riceglue.eot?f96jhx');
+    src: local('riceglue'),
+        url('../fonts/riceglue/riceglue.eot?f96jhx#iefix') format('embedded-opentype'),
+        url('../fonts/riceglue/riceglue.ttf?f96jhx') format('truetype'),
+        url('../fonts/riceglue/riceglue.woff?f96jhx') format('woff'),
+        url('../fonts/riceglue/riceglue.svg?f96jhx#riceglue') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-family: 'riceglue' !important;
+    speak: none;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-apps:before {
+  content: "\e900";
+}
+.icon-blog:before {
+  content: "\e901";
+}
+.icon-doodles:before {
+  content: "\e902";
+}
+.icon-history:before {
+  content: "\e903";
+}
+.icon-new_window:before {
+  content: "\e904";
+}
+.icon-rg_logo:before {
+  content: "\e905";
+}
+
+
+html, body 
+{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Remove content from visible display but keep available to 
+screen reader users */
+.off-screen {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px); /* for Internet Explorer */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+nav {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 0;
+  z-index: 12;
+}
+
+.centered {
+  top: 35% !important;
+  flex-direction: column;
+  height: 80px;
+}
+
+.centered p {
+  padding: 5px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.8em;
+}
+
+.centered p a {
+  color: #262626;
+}
+
+@media screen and (min-width: 600px) {
+  nav {
+    top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .centered #mapTrail {
+    font-size: 2.5em !important;
+  }
+
+}
+
+.instruction-section {
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  width: 400px;
+  margin-left: -200px;
+}
+
+.message-section {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+}
+
+#message {
+  cursor: pointer;
+  position: relative;
+  left: -50%;
+  transform: translateY(-50%);
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  text-align: center;
+  padding: 30px;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.2em;
+}
+
+.map {
+  margin: 0 auto;
+  margin-bottom: -30px;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.map:-webkit-full-screen {
+  height: 100%;
+}
+.map:-moz-full-screen {
+  height: 100%;
+}
+.map:-ms-fullscreen {
+  height: 100%;
+}
+.map:fullscreen {
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.shrink {
+  min-height: 70%;
+  height: 70%;
+}
+
+.info-section {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  top: 0;
+  width: 100%;
+  height: 33px;
+  z-index: 15;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 600px) {
+  .info-section {
+    justify-content: flex-end;
+  }
+}
+
+.info-section section{
+  cursor: pointer;
+  display: inline;
+  margin: 0.5em 0;
+  padding: 7px;
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 0.7em;
+  color: #262626;
+  border-bottom: 3px solid transparent;
+}
+
+.info-section section span.icon-new_window {
+  display: inline;
+  font-size: 1em;
+  padding: 0 2px;
+}
+
+.info-section section h1 {
+  font-size: 1.5em;
+}
+
+.info-section section h2 {
+  font-size: 1.1em;
+}
+
+.info-section section a {
+  color: #262626;
+}
+
+@media screen and (min-width: 600px) {
+  .info-section section{
+    padding: 7px 2em !important;
+  }
+}
+
+
+.info-section section:hover,
+.info-section section:focus {
+  border-bottom: 3px solid #262626;
+  transition: all 0.3s ease-in-out;
+}
+
+.info-section section:hover article,
+.info-section section:focus article {
+  display: block;
+}
+
+.info-section section article {
+  display: none;
+  position: fixed;
+  text-align: left;
+  margin: 0;
+  margin-top: 33px;
+  padding: 45px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  width: calc(100% - 90px);
+  height: 80%;
+  height: calc(80% - 116px);
+  overflow-y: auto;
+  color: #262626;
+  font-weight: 400;
+  font-size: 1.8em;
+  font-family: "Roboto Slab", serif;
+  background-color: rgba(255, 255, 255, 1);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  z-index: 18;
+}
+
+.info-section section article li {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.info-section section article li p,
+.info-section section article p {
+  font-weight: 400;
+  font-size: 0.7em;
+}
+
+.mod-date {
+  margin-top: -1.2em;
+  font-size: 0.5em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+ul.disc { list-style-type: disc;}
+
+ul.sublist { font-size: 0.9em; }
+
+input {
+  cursor: pointer;
+  background: transparent;
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+  color: #262626;
+  font-size: 1.5em;
+  margin: 10px;
+  border: 0;
+}
+
+@media screen and (min-width: 600px) {
+  input {
+    margin: 0 50px;
+    padding: 10px 20px;
+  }
+}
+
+
+input[type="file"]{
+  display: none;
+}
+
+
+#mapTrail {
+  text-decoration: none;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: -0.5em;
+  font-family: 'Roboto Slab';
+  font-size: 1.6em;
+  
+  font-weight: 400;
+  color: #262626;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#customFileUpload {
+  position: relative;
+  top: 1.6em;
+}
+
+
+#customFileUpload,
+#reset,
+#embed,
+#fileSubmit {
+  border: 3px solid #262626;
+  border-radius: 3em;
+  background-color: transparent;
+  font-family: 'Roboto Slab';
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #262626;
+  cursor: pointer;
+  padding: 8px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+#customFileUpload:hover,
+#reset:hover,
+#embed:hover,
+#fileSubmit:hover,
+#customFileUpload:focus,
+#reset:focus,
+#embed:focus,
+#fileSubmit:focus {
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+
+@media screen and (min-width: 600px) {
+  #embed,
+  #reset,
+  #fileSubmit,
+  #customFileUpload {
+    position: relative;
+    margin: 50px;
+  }
+
+  #fileSubmit {
+    top: -2.5em !important;
+  }
+
+}
+
+
+textarea {
+  margin: 0 auto !important;
+  resize: none;
+  font-size: 13px;
+  padding: 10px;
+  height: 50px;
+  min-height: 50px;
+  width: 97% !important;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+.embedBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  min-width: 300px;
+  width: 40%;
+  max-height: 90%;
+  z-index: 22;
+  font-family: "Roboto Slab", serif;
+  font-size: 0.9em;
+  text-align: center;
+  overflow-y: scroll !important;
+}
+
+.left {
+  text-align: left !important;
+}
+
+.embedBack {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  z-index: 20;
+}
+
+.buttons {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.okayButton,
+.cancelButton {
+  display: inline-block;
+  border: 3px solid #262626;
+  border-radius: 3em;
+  font-size: 0.9em;
+  margin: 5px 0;
+  width: 100%
+}
+
+.okayButton:hover,
+.cancelButton:hover,
+.okayButton:focus,
+.cancelButton:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 600px) {
+  .okayButton,
+  .cancelButton {
+    width: 45%;
+    margin: 5px;
+    padding: 5px;
+  }
+}
+
+
+.noscroll {
+  overflow: hidden !important;
+}
+
+.ol-attribution ul li {
+  font-family: 'Roboto Slab';
+  font-size: 0.7em;
+}
+
+.ol-zoom {
+  bottom: 10px; 
+  top: auto;
+}
+
+
+.buttonBorder {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  left: 50px;
+  top: -16px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  z-index: 10;
+}
+.buttonBorder:hover,
+.buttonBorder:focus {
+  border: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+
+.chartButton {
+  vertical-align: middle;
+  display: block;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 60, 136, 0.4);
+}
+
+.genericon.genericon-activity {
+  font-size: 25px;
+}
+
+.chartButton:hover,
+.chartButton:focus {
+  background-color: rgba(0, 60, 136, 0.7);
+}
+
+.underside {
+  padding: 10px;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 0.8em;
+  width: 100%;
+  height: 25%;
+  bottom: 20px;
+}
+
+.google-visualization-tooltip {
+  line-height: 60%;
+}
+
+
