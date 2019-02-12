@@ -1,4 +1,4 @@
-# Map-A-Trail *Discontinued*
+# Map-A-Trail *(Discontinued)*
 
 Map-A-Trail is a site that allows you to use your GPX file to share your tracks, waypoints, and routes with family and friends.
 
