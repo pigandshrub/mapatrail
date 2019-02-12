@@ -1,6 +1,6 @@
 # Map-A-Trail
 
-This project generates embed code to place on your site that will load an interactive trail map based on an uploaded gpx file.
+Map-A-Trail is a site that allows you to upload a gpx file to generate embed code for your site that will load an interactive trail map.
 
 This site was built using PHP and Javascript and mySQL.
 
